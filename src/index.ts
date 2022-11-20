@@ -13,7 +13,7 @@ async function waitPointsButton() {
 
       if (pointsButton) {
         pointsButton.addEventListener('click', () => {
-          channelPointsRewardMenu(pointsButton)
+          // channelPointsRewardMenu()
         })
 
         observer.disconnect()
@@ -22,7 +22,7 @@ async function waitPointsButton() {
   })
 }
 
-async function channelPointsRewardMenu(pointsButton: HTMLElement) {
+async function channelPointsRewardMenu() {
   const menu = await waitElement('div.rewards-list')
 
   if (menu) {
